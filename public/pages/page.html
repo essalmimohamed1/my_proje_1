@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="../css/app.css">
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../image/logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" type="button" class="btn btn-outline-success" class="btn btn-primary"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            logain
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                                <label for="validationCustom01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom03" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom04" class="form-label">State</label>
+                                <select class="form-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="validationCustom05" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom05" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../../index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../public/pages/page.html">offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../public/pages/page1.html" target="_blank">info</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+    </nav><br>
+    </div><br>
+    <h1 class="text-center bg-text mx-5">cars currently available</h1><br>
+    <div class="row d-flex container justify-content-around mx-5">
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../image/bmw-la-m5.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+                <h5 class="card-title">bmw-la-m5</h5>
+                <p class="card-text">Les voitures BMW Série 5 Berline M combinent de manière remarquable le tempérament
+                    sportif typiquement M au confort et à l'élégance d'une berline d’affaires. </p>
+                <a href="../pages/page1.html" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../image/porsche-911.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">la 991</h5>
+                <p class="card-text">Quand le contact avec la route prend tout son sens. Quand chaque kilogramme en
+                    moins promet plus d’agilité. C’est alors que l’esprit sportif prend les commandes.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card col-4" style="width: 18rem;">
+            <img src="../image/lamborghini-urus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">lamborghini-urus</h5>
+                <p class="card-text">L’Urus permet à Lamborghini d’attirer une nouvelle clientèle tout en procurant à
+                    ses fidèles un véhicule armé pour affronter l’hiver et transporter la famille. Avec un V8 biturbo de
+                    4,0 litres produisant 641 chevaux et un rouage intégral.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <!-- part2 -->
+        <div class="row d-flex container justify-content-around mx-5 p-2">
+            <div class="card col-4" style="width: 18rem;">
+                <img src="../image/lamborghini.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">lamborghini</h5>
+                    <p class="card-text">Discover all the new models of this exclusive car family, created to shape to
+                        your deepest emotions. Combining the highest expression of Lamborghini’s power with the
+                        exclusive refinement of Italian handicraft</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img src="../image/mercedes-c-class.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">C-class</h5>
+                    <p class="card-text">Specs datasheet with technical data and performance data plus an analysis of
+                        the direct market competition of Mercedes-Benz C 220 d (aut. 9) in 2023, the model with 4-door
+                        sedan body and Line-4 1993 cm3 ,</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img src="../image/ABT-Audi-RS3-Tuning.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Audi-RS3</h5>
+                    <p class="card-text">Le plus grand spécialiste de la préparation des modèles Audi et VW installe son
+                        légendaire « ABT Engine Control » (AEC) sur la nouvelle RS3. « Le logiciel a été spécialement
+                        adapté au véhicule par notre équipe et testé sur la route et sur le banc d'essai pendant</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div><br>
+        </div>
+    </div>
+            <!-- FOOTER par css-->
+            <div class="yallow bg-info-subtle row m-0">
+                <h3>sitest de réseautage social</h3>
+                <ul>
+                    <a href="https://www.instagram.com/audiofficial/?hl=fr" target="_blank">
+                        <img width="50px" height="50" src="../image/instgram.png" alt="">
+                    </a>
+                    <a href="https://fr-fr.facebook.com/marocaudi/" target="_blank">
+                        <img width="50px" height="50" src="../image/facebok.jpeg" alt="">
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img width="50px" height="50" src="../image/téléchargement.png" alt="">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=DmwnWrRlQhjVXSLnMtSGtZDhScFFvjsqhlWXJBVkJNzgnFKKNtvMlmBqSNvzjhVKZNlfDhgmbZRg"
+                        target="_blank">
+                        <img width="50px" height="50" src="../image/email.png" alt="">
+                    </a>
+                </ul>
+                <footer>
+                    <small>Copyright © 2023 Littérature.com. Tous droits réservés.</small>
+                </footer>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
